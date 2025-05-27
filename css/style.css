@@ -89,12 +89,17 @@ main{
     margin: 80px auto 0px;
     padding: 20px;
     animation: entrada 1s ease-out forwards; /* Animación de entrada mejorada */
+    display: flex; /* Para que las secciones se puedan apilar mejor */
+    flex-direction: column;
+    gap: 30px; /* Espacio entre secciones */
 }
 
-section{
-    background-color: #f0f8ff; /* Very light blue */
-    padding: 20px;
+section {
+    background-color: white; /* Cambiado de antiquewhite para un aspecto más limpio y coherente */
+    padding: 30px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    text-align: center; /* Centrar contenido por defecto */
 }
 footer{
     background-color: #19535F; /* Deep teal blue */
@@ -138,3 +143,176 @@ footer{
     font-size: 2.4vw;
     }
 }
+
+
+/* Estilos de las secciones nuevas para index.html */
+section h1 {
+    color: #19535F; /* Azul oscuro de tu paleta */
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+section h2 {
+    color: #19535F; /* Azul oscuro */
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #a7e3a0; /* Línea verde sutil */
+    display: inline-block; /* Para que el borde se ajuste al texto */
+    padding-bottom: 5px;
+}
+
+section p {
+    color: #4a5a6a;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para el Hero Section */
+.hero {
+    display: flex;
+    flex-direction: row; /* Contenido e imagen en fila */
+    align-items: center;
+    gap: 40px;
+    padding: 50px; /* Más padding para una sección destacada */
+    background: linear-gradient(to right, #f0f8ff, #e6ffe6); /* Degradado suave de fondo */
+    text-align: left; /* Contenido de texto alineado a la izquierda */
+    box-shadow: none; /* Quitar sombra de sección general */
+}
+
+.hero-contenido {
+    flex: 1;
+}
+
+.hero-contenido h1 {
+    font-size: 3.5em; /* Más grande para el título principal */
+    color: #19535F;
+    margin-bottom: 15px;
+}
+
+.hero-contenido p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #374151;
+}
+
+.hero-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones principales */
+.btn-principal, .btn-secundario {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1.05em;
+}
+
+.btn-principal {
+    background-color: #2e8b57; /* Verde esmeralda */
+    color: white;
+}
+
+.btn-principal:hover {
+    background-color: #19535F; /* Azul más oscuro */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: #19535F; /* Azul oscuro */
+    border: 2px solid #19535F;
+}
+
+.btn-secundario:hover {
+    background-color: #19535F;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de destacados (grid) */
+.destacados .grid-destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.item-destacado {
+    background-color: #f0f8ff; /* Fondo muy claro */
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #c8e6c9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-destacado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item-destacado h3 {
+    color: #2e8b57; /* Verde esmeralda */
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.item-destacado p {
+    font-size: 0.95em;
+    color: #556677;
+    margin-bottom: 0; /* Eliminar margen inferior si no hay botón */
+}
+
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Apilar en pantallas pequeñas */
+        text-align: center;
+        padding: 30px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-contenido p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* @media (max-width: 600px) está definido al inicio para la navegación */

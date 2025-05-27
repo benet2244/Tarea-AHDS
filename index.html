@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>VenProductos - Inicio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animaciones.css">
-</head>
+    </head>
 <body>
     <header>
         <nav>
@@ -17,7 +17,6 @@
                 <li><a href="pages/public/galeria.html">Galería</a></li>
                 <li><a href="pages/public/login.html">Iniciar Sesión</a></li>
             </ul>
-            <!-- Con el div y los span crearemos un icono de tipo hamburguesa -->
             <div class="hamburguesa">
                 <span></span>
                 <span></span>
@@ -27,14 +26,47 @@
     </header>
 
     <main>
-        <section>
-            <h1>Bienvenido a VenProductos</h1>
-            <p>Bienvenido a nuestro sitio web.</p>
+        <section class="hero">
+            <div class="hero-contenido">
+                <h1>Tu Solución en Electrónica Industrial</h1>
+                <p>En VenProductos, somos especialistas en el suministro de componentes, diseño de proyectos y fabricación de prototipos para la industria electrónica. ¡Impulsa tus innovaciones con nosotros!</p>
+                <a href="pages/public/servicios.html" class="btn-principal">Descubre Nuestros Servicios</a>
+            </div>
+            <div class="hero-imagen">
+                <img src="https://via.placeholder.com/600x400?text=Componentes+Electr%C3%B3nicos" alt="Componentes Electrónicos y Proyectos">
+                </div>
         </section>
+
+        <section class="acerca-de">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Con años de experiencia en el sector, VenProductos se ha consolidado como un aliado estratégico para empresas y emprendedores. Nos dedicamos a ofrecer soluciones integrales, desde la asesoría técnica hasta el soporte post-venta, garantizando la calidad y eficiencia en cada proyecto.</p>
+            <p>Nuestra misión es potenciar el desarrollo tecnológico de nuestros clientes, proporcionando acceso a la mejor tecnología y conocimiento en el ámbito de la electrónica.</p>
+            <a href="pages/public/galeria.html" class="btn-secundario">Explora nuestra Galería</a>
+        </section>
+
+        <section class="destacados">
+            <h2>Nuestros Pilares</h2>
+            <div class="grid-destacados">
+                <div class="item-destacado">
+                    <h3>Componentes de Calidad</h3>
+                    <p>Amplia variedad y stock de componentes electrónicos, garantizando la autenticidad y el rendimiento.</p>
+                </div>
+                <div class="item-destacado">
+                    <h3>Diseño a Medida</h3>
+                    <p>Creamos soluciones electrónicas personalizadas que se ajustan perfectamente a tus especificaciones.</p>
+                </div>
+                <div class="item-destacado">
+                    <h3>Soporte Técnico Experto</h3>
+                    <p>Nuestro equipo está listo para brindarte la asesoría y el soporte que necesitas en cada etapa.</p>
+                </div>
+            </div>
+            <a href="pages/public/servicios.html" class="btn-principal">Ver todos los Servicios</a>
+        </section>
+
     </main>
 
     <footer>
-        <p>2025 - Todos los derechos reservados</p>
+        <p>&copy; 2025 VenProductos - Todos los derechos reservados</p>
     </footer>
     <script src="js/script.js"></script>
 </body>

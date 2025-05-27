@@ -1,0 +1,28 @@
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.galeria img{
+    background-color: white;
+    border: 1px solid #c8e6c9; /* Light green border */
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    object-fit: cover;
+    height: 300px;
+    /* Animación al pasar el ratón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.galeria img:hover {
+    transform: scale(1.05); /* Agranda ligeramente la imagen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil */
+}
+
+@media(max-width: 600px){
+    .galeria img{
+        object-fit: contain;
+        width: 100%;
+    }
+}

@@ -1,0 +1,85 @@
+.introduccion-servicios {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    color: #374151; /* Color de texto más oscuro */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.servicio{
+    background-color: white;
+    padding: 30px 20px; /* Aumenta el padding vertical */
+    border: 1px solid #c8e6c9; /* Light green border */
+    border-radius: 12px; /* Bordes más redondeados */
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el ratón */
+    display: flex; /* Para centrar el contenido */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Espacia el contenido */
+}
+
+.servicio:hover {
+    transform: translateY(-8px); /* Se eleva un poco más */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.servicio h3 {
+    color: #19535F; /* Deep teal blue */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.servicio p {
+    color: #4a5a6a; /* Un color de texto más suave */
+    font-size: 0.95em;
+    line-height: 1.5;
+    flex-grow: 1; /* Permite que el párrafo ocupe espacio si es necesario */
+    margin-bottom: 20px;
+}
+
+.icono-servicio {
+    font-size: 3em; /* Tamaño del ícono */
+    color: #2e8b57; /* Sea green */
+    margin-bottom: 10px;
+}
+
+.btn-servicio {
+    display: inline-block;
+    background-color: #2e8b57; /* Sea green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px; /* Espacio superior para el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-servicio:hover {
+    background-color: #19535F; /* Deep teal blue */
+    transform: translateY(-2px);
+}
+
+
+@media(max-width: 600px){
+    .servicio{
+        width: 100%;
+        padding: 25px 15px;
+    }
+    .introduccion-servicios {
+        margin-bottom: 30px;
+        font-size: 1em;
+    }
+}

@@ -3,10 +3,10 @@ const navMenu = document.querySelector("nav ul");
 
 hamburguesa.addEventListener("click", () => {
     navMenu.classList.toggle("verMenu");
-    hamburguesa.classList.toggle("active"); // <-- ¡Añade esta línea!
+    hamburguesa.classList.toggle("active"); 
 
 
 
 
-    
+
 });
